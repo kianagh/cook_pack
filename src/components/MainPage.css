@@ -1,0 +1,47 @@
+.HomePage {
+    background-color: rgb(132, 132, 207);
+}
+
+.navbarPlace {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 924px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 257px;
+    background: #B1D3FF;
+    padding: 0px;
+}
+
+
+.login {
+    display: flex;
+    justify-content: end;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+}
+
+.brand {
+    display: flex;
+    justify-content: start;
+
+}
