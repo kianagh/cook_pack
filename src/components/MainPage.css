@@ -1,47 +1,159 @@
-.HomePage {
-    background-color: rgb(132, 132, 207);
+.heroPage {
+    /* background: var(--Dark-Blue-200, #B1D3FF); */
+    background-image: url('../assets/Rectangle\ 10.svg');
+    background-blend-mode:difference;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #B1D3FF;
+  
+    
 }
 
 .navbarPlace {
     width: 100%;
     flex-shrink: 0;
     display: flex;
+    justify-content: center;
+}
+
+.btn-hero {
+    border-radius: 24px;
+    background-color: #021D4B;
+    padding: 14px 36px;
+    color: white;
+    border: none;
+    font-weight: 700;
 }
 
 .navbar {
-    width: 100%;
-    flex-shrink: 0;
     display: flex;
-    justify-content: center;
-
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 924px;
     height: 60px;
-    flex-shrink: 0;
+    flex-wrap: wrap;
     border-radius: 257px;
-    background: #B1D3FF;
-    padding: 0px;
+    background-color: #B1D3FF !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 
-.login {
+/* .login {
     display: flex;
-    justify-content: end;
-}
+    align-items: center !important;
+
+} */
 
 .information {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 393px;
+    height: fit-content;
+}
+
+.ulInformation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 393px;
+
 }
 
 .brand {
     display: flex;
-    justify-content: start;
+    align-items: center;
+
+}
+
+.liInformation {
+    list-style-type: none;
+
+}
+
+.liInfo {
+    text-decoration: none;
+}
+
+/* .logo {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+
+} */
+
+.login {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    justify-content: space-between;
+    padding-left: 14px !important;
+    width: 110px;
+}
+
+.ulLogin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 101px !important;
+    padding-left: 0px !important;
+}
+
+.liLogin {
+
+    list-style-type: none;
+}
+
+.dastebandiBtn {
+    width: 200px !important;
+    border-radius: 114px;
+    background-color: var(--Primary, #021D4B);
+    color: white;
+}
+
+.rotetedBox {
+    width: 150px;
+    height: 150px;
+    background-color: #1c3c66;
+    backdrop-filter: blur(16px);
+    border-radius: 41px;
+    transform: rotate(45deg);
+    opacity: 100%;
+    margin-top: -75px;
+  
+
+
+}
+.squar{
+    transform: rotate(-45deg);
+    flex-direction: row-reverse;
+    display: flex;
+
+}
+.secondPart{
+    background-color: #021D4B;
+    opacity: 90%;
+    
+    margin-top: -50px;
+    
+}
+.thirdPart{
+    background-color: #021D4B;
+    opacity: 90%;
+   
+    
+}
+.fourthPage{
+    background-color: #021D4B;
+    opacity: 90%;
 
 }

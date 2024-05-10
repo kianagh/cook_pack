@@ -1,0 +1,37 @@
+.gif {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    margin: 5px;
+    transform: rotate(-45deg); 
+   
+}
+
+.title {
+    color: var(--White, #FFF);
+    font-family: Cinema;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.info {
+    color: #FFF;
+    text-align: center;
+    font-family: Dana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+.backOfGifs {
+    width: 169.059px;
+    height: 169.059px;
+    transform: rotate(45deg);
+    border-radius: 41px;
+    margin-bottom: 5px;
+}

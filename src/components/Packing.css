@@ -1,0 +1,19 @@
+.packpic {
+    width: 474px;
+    height: 342px;
+    flex-shrink: 0;
+    border-radius: 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.li {
+    
+    text-align: right;
+    font-family: Dana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
