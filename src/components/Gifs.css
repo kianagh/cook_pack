@@ -9,7 +9,8 @@
 
 .title {
     color: var(--White, #FFF);
-    font-family: Cinema;
+    font-family: cinema;
+    color: var(--White, #FFF);
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
@@ -20,11 +21,7 @@
 .info {
     color: #FFF;
     text-align: center;
-    font-family: Dana;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: -1px;
 }
 

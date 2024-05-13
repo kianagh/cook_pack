@@ -15,6 +15,8 @@ import yesOrNo from '../assets/yesOrNo.gif'
 import plus from '../assets/plus.gif'
 import pack from '../assets/pack.gif'
 import gholak from '../assets/gholakgif.gif'
+// import Ideas from './Ideas';
+import Footer from './Footer';
 
 // import Row from 'react-bootstrap/esm/Row';
 
@@ -26,7 +28,7 @@ export default function MainPage() {
     ];
     return (
 
-        <div className='homePage container-fluid'>
+        <div className='homePage'>
 
             <div className='heroPage container-fluid '>
                 <div className='navbarPlace container'>
@@ -51,11 +53,11 @@ export default function MainPage() {
                         </div>
                     </Navbar>
                 </div>
-                <div className='col align-self container justify-content-start d-flex align-items-end h-50'>
+                <div className='col align-self container justify-content-start d-flex align-items-center h-50'>
                     <div className='text-right' >
-                        <h1 className='text-white '>...طعم غذا، به مواد تازشه</h1>
-                        <p className='text-white'>بیش از ۳۰۰ نوع وعده غذایی در ۸ دسته‌بندی متفاوت هفتگی</p>
-                        <div className='col align-self container justify-content-start d-flex mt-2'>
+                        <h1 className='text-dark MainTop '>طعم غذا،<br/> به مواد تازشه...</h1>
+                        <p className='text-white text-right mr-0 secondMainTop'>بیش از ۳۰۰ نوع وعده غذایی در ۸ دسته‌بندی متفاوت هفتگی</p>
+                        <div className='col  container justify-content-start d-flex mt-2'>
                             <button className=' btn-hero ml-auto'>مشاهده دسته بندی</button>
                         </div>
                     </div>
@@ -73,13 +75,13 @@ export default function MainPage() {
                 </div>
                 <div class="container p-5">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 mt-4">
                             <Gifs gifUrls={[book]}  title="انتخاب غذای مورد نظر" info="انتخاب غذای مناسب در ۸ دسته بندی همراه با قابلیت شخصی‌سازی مواد اولیه!" />
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 mt-4">
                             <Gifs gifUrls={[cooking]} title="تحویل پک سفارشی" info="ارسال مواد اولیه به همراه دستورالعمل ویژه کوک پک با بسته‌بندی سفارشی در زمان و محل مشخص شده" />
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 mt-4">
                             <Gifs gifUrls={[door]} title="آشپزی کنید و لذت ببرید" info="لذت کامل آشپزی بدون هیچ زباله‌ی غذایی و سرو غذای سالم با دستور پخت مخصوص" />
                         </div>
                     </div>
@@ -90,21 +92,27 @@ export default function MainPage() {
             <div className='thirdPart'>
                 <Packing />
             </div>
-            <div className='fourthPage  p-5'>
+            <div className='fourthPage  p-5 align-items-center d-flex'>
                 <div class="row d-flex align-items-center">
-                    <div class="col-md-3 ">
+                    <div class="col-md-3  mt-4">
                         <Gifs gifUrls={[yesOrNo]} title="شخصی‌سازی لیست" info="حذف یا تغییر مواد غذایی و مقدار آن‌ها" />
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3  mt-4">
                         <Gifs gifUrls={[plus]} title="بدون تعهد مشتری" info="لغو آسان درخواست در هر زمانی بدون غرامت" />
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3  mt-4">
                         <Gifs gifUrls={[pack]} title="تنوع مواد غذایی تازه" info="تنوع بالای مواد اولیه تازه حتی برای گیاهخواران" />
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3  mt-4">
                         <Gifs gifUrls={[gholak]} title="مقرون به صرفه" info="پک ارزان و اشتراک متناسب با هر بودجه‌ای" />
                     </div>
                 </div>
+            </div>
+            {/* <div>
+                <Ideas/>
+            </div> */}
+            <div className='FOOTER'>
+                <Footer/>
             </div>
 
         </div>

@@ -10,7 +10,12 @@
   
     
 }
-
+.secondMainTop{
+    text-align: right;
+}
+.homePage {
+    overflow-x: hidden;
+}
 .navbarPlace {
     width: 100%;
     flex-shrink: 0;

@@ -9,11 +9,20 @@
 }
 
 .li {
-    
-    text-align: right;
-    font-family: Dana;
+    text-align: justify;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.MainTop {
+    font-family: cinema;
+    color:  #000;
+    text-align: justify;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70%;
+    /* 53.2px */
 }

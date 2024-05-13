@@ -7,10 +7,10 @@ export default function Gifs({ gifUrls, title, info }) {
     return (
         <div className='container'>
             <Row className='d-flex align-items-center flex-column' >
-                <div className='bg-white backOfGifs d-flex a;ign-items-center'>
+                <div className='bg-white backOfGifs d-flex align-items-center justify-content-center'>
                     {gifUrls.map((gifUrl, index) => (
-                        <Col key={index} >
-                            <img src={gifUrl} alt={`Image ${index + 1}`} className='gif' />
+                        <Col key={index} className='d-flex justify-content-center' >
+                            <img src={gifUrl} alt={`Image ${index + 1}`} className='gif justify-content-center d-flex' />
                         </Col>
                     ))}
                 </div>

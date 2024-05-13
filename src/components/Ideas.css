@@ -1,0 +1,38 @@
+.pictures {
+    position: relative;
+    width: 650px;
+}
+
+.pictureOne {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    border-radius: 48px;
+    z-index: 4;
+}
+
+.pictureSecond {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    border-radius: 48px;
+    z-index: 3;
+
+}
+
+.pictureThird {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    border-radius: 48px;
+    z-index: 2;
+
+}
+
+.pictureFourth {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    border-radius: 48px;
+    z-index: 1;
+}

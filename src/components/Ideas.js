@@ -1,6 +1,12 @@
 import React from 'react'
 import Row from 'react-bootstrap/esm/Row'
 import Col from 'react-bootstrap/esm/Col'
+import pic1 from '../assets/pic1.jpg'
+import pic2 from '../assets/pic2.jpg'
+import pic3 from '../assets/pic3.jpg'
+import pic4 from '../assets/pic4.jpg'
+import './Ideas.css'
+
 
 export default function Ideas() {
     return (
@@ -14,7 +20,19 @@ export default function Ideas() {
             </Row>
             <Row>
                 <Col>
-                    
+                    <div className='d-flex justify-content-between pictures d-flex align-items-center'>
+                        <div className='pb-5'>
+                            <img src={pic1} alt='pictures' className='pictureOne z-index'/>
+                        </div>
+                        <div>
+                            <img src={pic2} alt='pictures' className='pictureSecond'/>
+                        </div>  <div>
+                            <img src={pic3} alt='pictures' className='pictureThird'/>
+                        </div>  <div>
+                            <img src={pic4} alt='pictures' className='pictureFourth'/>
+                        </div>
+                    </div>
+
                 </Col>
             </Row>
             <Row>
