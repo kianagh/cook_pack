@@ -1,4 +1,45 @@
+.footerLOgo {
+    width: 174.624px;
+    height: 66px;
+    object-fit: cover;
 
-.socialMediaIcons{
-    width: 80px;
+}
+
+.socialMediaIcons {
+    width: 60px;
+    border-radius: 70%;
+}
+
+.socialmedia {
+    width: 100px;
+    height: 100px;
+}
+
+.Useremail {
+    background: var(--Primary, #021D4B);
+    color: white;
+    border: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    
+}
+
+.inputgroup {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    background: var(--Primary, #021D4B);
+
+}
+.form{
+    border-radius: 16px;
+    border: none;
+
+}
+.emailForm{
+    border-radius: 16px;
+    border: none;
 }

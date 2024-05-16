@@ -8,7 +8,7 @@ export default function Packing() {
             <div className='row p-5 d-flex align-items-center'>
 
                 <div className='col-md-8'>
-                    <h1 className='text-white text-right pack'>داخل بسته‌های کوک‌پک چی وجود داره؟</h1>
+                    <h1 className='text-white text-right pack d-flex justify-content-start mb-3'>داخل بسته‌های کوک‌پک چی وجود داره؟</h1>
                     <div>
                         <ul className='d-flex flex-column  justify-content-start'>
                             <li className='li text-white '>مواد اولیه تازه و سالم تهیه شده به صورت مستقیم از مزرعه</li>
