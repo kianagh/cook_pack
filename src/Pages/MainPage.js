@@ -6,17 +6,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/logopart.png';
-import Gifs from './Gifs';
+import Gifs from '../components/Gifs';
 import book from '../assets/book.gif'
 import cooking from '../assets/cooking.gif'
 import door from '../assets/door.gif'
-import Packing from './Packing';
+import Packing from '../components/Packing';
 import yesOrNo from '../assets/yesOrNo.gif'
 import plus from '../assets/plus.gif'
 import pack from '../assets/pack.gif'
 import gholak from '../assets/gholakgif.gif'
-import Ideas from './Ideas';
-import Footer from './Footer';
+import Ideas from '../components/Ideas';
+import Footer from '../components/Footer';
 
 // import Row from 'react-bootstrap/esm/Row';
 

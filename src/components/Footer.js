@@ -43,7 +43,7 @@ export default function Footer() {
           </Col>
 
         </Row>
-        <Row className='d-flex align-items-center justfy-content-between '>
+        <Row className='d-flex align-items-center justfy-content-around'>
           <Col className='d-flex justify-content-start align-items-start  text-right col-md-6'>
             <Row className='d-flex justify-content-start align-items-start flex-column text-right '>
               <div className='d-flex'><h1 className='text-right'>درباره کوک پک</h1></div>
@@ -55,7 +55,7 @@ export default function Footer() {
                 </InputGroup></div>
             </Row>
           </Col>
-          <Col className='d-flex justify-content-start align-items-start flex-column text-right col-md-6'>
+          <Col className='d-flex align-items-start flex-column col-md-6'>
             <div className=' d-flex justify-content-center align-items-start flex-column  col-md-6 '>
               <div>
                 <h3>ارتباط با ما</h3>
