@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainPage.css';
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,17 +15,13 @@ import yesOrNo from '../assets/yesOrNo.gif'
 import plus from '../assets/plus.gif'
 import pack from '../assets/pack.gif'
 import gholak from '../assets/gholakgif.gif'
-// import Ideas from './Ideas';
+import Ideas from './Ideas';
 import Footer from './Footer';
 
 // import Row from 'react-bootstrap/esm/Row';
 
 export default function MainPage() {
-    const gifUrls = [
-        '../assets/book.gif',
-        '../assets/cooking.gif',
-        '../assets/door.gif'
-    ];
+  
     return (
 
         <div className='homePage'>
@@ -108,9 +104,9 @@ export default function MainPage() {
                     </div>
                 </div>
             </div>
-            {/* <div>
+            <div className='idea'>
                 <Ideas/>
-            </div> */}
+            </div>
             <div className='FOOTER'>
                 <Footer/>
             </div>

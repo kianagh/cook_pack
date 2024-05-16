@@ -23,23 +23,45 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;
-    
+
 }
 
 .inputgroup {
+
+    background: var(--Primary, #021D4B);
+
+}
+
+.form {
+    border-radius: 16px;
+    border: 1px;
+    border: #021D4B;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;
-    background: var(--Primary, #021D4B);
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Dana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
 
 }
-.form{
+
+.emailForm {
     border-radius: 16px;
-    border: none;
+    border: 1px;
+    border: #021D4B;
 
 }
-.emailForm{
-    border-radius: 16px;
-    border: none;
+
+.p {
+    text-align: right;
+}
+
+.conection {
+    width: 500px;
+    height: 57px;
 }
