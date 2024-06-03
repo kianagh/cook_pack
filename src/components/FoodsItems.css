@@ -1,4 +1,4 @@
-.ghaza {
+ .ghaza {
     width: 267px;
     height: 272px;
     border-radius: 41px;
@@ -7,7 +7,7 @@
 
 }
 
-.container {
+.foodsItem {
     width: 660px;
     height: 936px;
     flex-shrink: 0;
@@ -22,4 +22,4 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
+} 

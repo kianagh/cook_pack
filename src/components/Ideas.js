@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/esm/Col'
 // import pic3 from '../assets/pic3.jpg'
 // import pic4 from '../assets/pic4.jpg'
 import './Ideas.css'
-import { Carousel } from 'react-bootstrap';
+import Slider from './Slider'
+
 
 
 export default function Ideas() {
@@ -20,7 +21,8 @@ export default function Ideas() {
                 </Col>
             </Row>
             <Row>
-                <Carousel/>
+            <Slider/>
+               
             </Row>
             <Row>
                 <Col>

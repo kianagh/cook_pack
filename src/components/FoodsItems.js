@@ -10,7 +10,7 @@ import './FoodsItems.css';
 
 export default function FoodsItems() {
     return (
-        <div className='container'>
+        <div className='container foodsItem'>
             <div>
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col md={6} className="d-flex align-items-center flex-column pt-5">
