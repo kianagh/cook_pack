@@ -1,0 +1,25 @@
+.ghaza {
+    width: 267px;
+    height: 272px;
+    border-radius: 41px;
+    background-color: rgb(0, 0, 0, 0.85);
+    border: none;
+
+}
+
+.container {
+    width: 660px;
+    height: 936px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--White, #FFF);
+}
+
+.pictureName {
+    margin-top: -50px;
+    color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
