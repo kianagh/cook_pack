@@ -1,0 +1,30 @@
+.rightSideMenu {
+    width: 444px;
+    height: 1024px;
+    flex-shrink: 0;
+    overflow-x: hidden;
+}
+.entireSide{
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 124px;
+    height: 48px;
+}
+
+.vector {
+    width: 323.275px;
+    height: 178px;
+}
+
+.menuBtn {
+    color: var(--Black, #000);
+    font-family: Dana;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    outline: none;
+
+}

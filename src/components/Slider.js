@@ -38,8 +38,8 @@ export default function Slider() {
       <Carousel>
         {slidesData.map((data) => (
           <Carousel.Item key={data}>
-            <div >
-              <img className=" sliderImage" src={data.imageUrl} alt='image' />
+            <div key={data} >
+              <img   className=" sliderImage" src={data.imageUrl} alt='image' />
             </div>
             <Carousel.Caption className=' d-flex row text-right'>
               <h5>{data.name}</h5>
