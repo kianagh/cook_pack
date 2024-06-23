@@ -1,0 +1,50 @@
+.register {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    height: 100vh;
+}
+
+.LeftPartBack {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #021D4B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.rightPartOfBack {
+    position: relative;
+    z-index: 1;
+    background-color: #ABD2FF;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    width: 266px;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.vec {
+    width: 34px;
+    height: 34px;
+   
+}
+.text{
+    text-decoration: none;
+    color: black;
+}
+  

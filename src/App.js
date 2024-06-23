@@ -4,6 +4,7 @@ import './App.css';
 import MainPage from './Pages/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Foods from './Pages/Foods'
+import Registering from './Pages/Registering';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/foods" element={<Foods />} />
+        <Route path="/register" element={<Registering/>}/>
 
       </Routes>
     </div>
