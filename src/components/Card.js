@@ -16,7 +16,7 @@ export default function Card() {
                         <div>
                             <p>مهدی کشاورزی</p>
                             <div>
-                                <img src={pen}/>
+                                <img src={pen} alt='logo'/>
                                 <Link>ویرایش اطلاعات</Link>
                             </div>
                         </div>
