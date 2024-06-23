@@ -1,6 +1,73 @@
 .card {
     width: 852px;
-    height: 700px;
-    background-color: #ABD2FF;  
-   
+    height: 80%;
+    background-color: #ABD2FF;
+    padding: 36px;
+    border-radius: 16px;
+
+    /* kiana dost drm  */
+
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: #021D4B;
+}
+.username {
+    text-align: right;
+}
+.btnIcon {
+    background-color: #021D4B;
+    border: none;
+    width: 47px;
+    height: 47px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.btnOrder {
+    background-color: #021D4B;
+    border: none;
+    padding: 12px;
+    height: 47px;
+    border-radius: 16px;
+}
+
+.title-container {
+    color: black;
+    text-align: center;
+    font-family: Dana;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0%;
+    /* 0px */
+}
+
+.text-container {
+    color: #000;
+    text-align: center;
+    font-family: Dana;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0%;
+    /* 0px */
+}
+
+.hr {
+    width: 770px;
+    height: 0.8px;
+    flex-shrink: 0;
+    background-color: black;
+    margin-top: 36px;
+
+}
+
+@media (max-width: 967px) {
+    .card {
+        width: 100%;
+        height: 100%;
+
+    }
 }
