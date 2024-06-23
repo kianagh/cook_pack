@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/foods" element={<Foods />} />
         <Route path="/register" element={<Registering/>}/>
-
       </Routes>
     </div>
   );
