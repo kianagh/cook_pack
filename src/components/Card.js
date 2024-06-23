@@ -15,7 +15,7 @@ export default function Card() {
         <div className="d-flex justify-content-between mb-5">
           <div className="d-flex">
             <div>
-              <img src={avatar} alt="logo" />
+              <img src={avatar} alt="logo " />
             </div>
             <div className="w-100 username mt-2 mx-2 ">
               <h2>مهدی کشاورزی</h2>
