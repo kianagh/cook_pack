@@ -6,26 +6,28 @@ import './Card.css'
 
 export default function Card() {
     return (
-        <div className='card'>
-            <div className='innerCard'>
-                <div className='row firstRow'>
-                    <div className='col'>
-                        <div>
-                            <img src={avatar} alt='logo'/>
-                        </div>
-                        <div>
-                            <p>مهدی کشاورزی</p>
+        <div className='mt-2 mb-2'>
+            <div className='card'>
+                <div className='innerCard'>
+                    <div className='row firstRow'>
+                        <div className='col'>
                             <div>
-                                <img src={pen} alt='logo'/>
-                                <Link>ویرایش اطلاعات</Link>
+                                <img src={avatar} alt='logo' />
+                            </div>
+                            <div>
+                                <p>مهدی کشاورزی</p>
+                                <div>
+                                    <img src={pen} alt='logo' />
+                                    <Link>ویرایش اطلاعات</Link>
+                                </div>
                             </div>
                         </div>
+                        <div className='col'></div>
+
                     </div>
-                    <div className='col'></div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     )
 }
