@@ -17,10 +17,10 @@ export default function Card() {
             <div>
               <img src={avatar} alt="logo" />
             </div>
-            <div className="w-100 username mt-2 mx-2">
+            <div className="w-100 username mt-2 mx-2 ">
               <h2>مهدی کشاورزی</h2>
               <div className="">
-                <img className="logoPen" src={pen} alt="logo" />
+                <img className="logoPen" src={pen} alt="logo" /> 
                 <Link className="linkStyle">ویرایش اطلاعات</Link>
               </div>
             </div>
