@@ -14,13 +14,13 @@ import Card2 from './Card2';
 export default function Reg() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
-        { text: "سفارش ها", src: box,add:'!#' },
+        { text: "سفارش ها", src: box,add:'/register' },
         { text: "آدرس ها", src: map,add:'!#' },
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human },
-        { text: "خروج از حساب", src: out },
+        { text: "حساب ها", src: human,add:'/signup' },
+        { text: "خروج از حساب", src: out ,add:'!#'},
     ];
     return (
         <div className='register'>
@@ -51,7 +51,7 @@ export default function Reg() {
                             {logoindown.map((item, index) => (
                                 <li key={index} className='d-flex justify-content-right align-items-center'>
                                     <img className="vec col-1 mt-1" src={item.src} alt="logo" />
-                                    <Link className='col-11 text' to='#!'>{item.text}</Link>
+                                    <Link className='col-11 text' to={item.add}>{item.text}</Link>
                                 </li>
                             ))}
                         </ul>

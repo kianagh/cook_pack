@@ -5,8 +5,8 @@ import MainPage from './Pages/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Foods from './Pages/Foods'
 import Registering from './Pages/Registering';
-import Reg from './components/Reg';
 import RegComplete from './components/RegComplete';
+import SignUP from './components/SignUP';
 
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
         <Route path="/foods" element={<Foods />} />
         <Route path="/register" element={<Registering/>}/>
         <Route path='/reg' element={<RegComplete/>}/>
+        <Route path='/signup' element={<SignUP/>}/>
+       
       </Routes>
     </div>
   );

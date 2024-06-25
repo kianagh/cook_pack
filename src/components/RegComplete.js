@@ -7,25 +7,25 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card3 from './Card3';
+import Card2 from './Card2';
 
 
 
 export default function RegComplete() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
-        { text: "سفارش ها", src: box,add:'!#' },
+        { text: "سفارش ها", src: box,add:'/register' },
         { text: "آدرس ها", src: map,add:'!#' },
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human },
-        { text: "خروج از حساب", src: out },
+        { text: "حساب ها", src: human,add:'/signup' },
+        { text: "خروج از حساب", src: out,add:'!#' },
     ];
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-              <Card3/>
+              <Card2/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>
@@ -51,7 +51,7 @@ export default function RegComplete() {
                             {logoindown.map((item, index) => (
                                 <li key={index} className='d-flex justify-content-right align-items-center'>
                                     <img className="vec col-1 mt-1" src={item.src} alt="logo" />
-                                    <Link className='col-11 text' to='#!'>{item.text}</Link>
+                                    <Link className='col-11 text' to={item.add}>{item.text}</Link>
                                 </li>
                             ))}
                         </ul>

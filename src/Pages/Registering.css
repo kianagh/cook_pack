@@ -31,7 +31,7 @@
     box-sizing: border-box;
     color: black;
     width: 266px;
-    height:100%;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -41,10 +41,41 @@
 .vec {
     width: 34px;
     height: 34px;
-   
+
 }
-.text{
+
+.text {
     text-decoration: none;
     color: black;
 }
-  
+
+.BackGroundofSignUp {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #021D4B;
+    height: 100vh;
+    display: flex;
+    color: white;
+
+}
+
+.boxOfSandwich {
+    width: 756px;
+    height: 666px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Secondary, #ABD2FF);
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    border-radius: 16px;
+    border: 2px solid var(--White, #FFF);
+    background: rgba(2, 29, 75, 0.60);
+    color: white;
+    width: 300px;
+    height: 44px;
+    flex-shrink: 0;
+}

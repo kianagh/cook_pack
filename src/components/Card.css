@@ -5,8 +5,6 @@
     padding: 36px;
     border-radius: 16px;
 
-    /* kiana dost drm  */
-
 }
 
 .linkStyle {
@@ -54,7 +52,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 0%;
-    /* 0px */
+    
 }
 
 .hr {

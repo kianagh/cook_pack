@@ -42,7 +42,7 @@ export default function MainPage() {
                                     <Link to='/plan' className='nav-link'>طرح ها</Link>
                                 </Nav>
                                 <Nav className='reg'>
-                                    <Link to='/register' className='nav-link'>ثبت نام</Link>
+                                    <Link to='/signup' className='nav-link'>ثبت نام</Link>
                                     <Link to='/login' className='nav-link'>ورود</Link>
                                 </Nav>
                             </Navbar.Collapse>
