@@ -5,9 +5,7 @@ import pen from "../assets/pen.png";
 import alarm from "../assets/alarm.png";
 import shopping from "../assets/shopping.png";
 import emptyBox from "../assets/emptybox.png";
-
 import "./Card.css";
-
 export default function Card() {
   return (
     <div className="">

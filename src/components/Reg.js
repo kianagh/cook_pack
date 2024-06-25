@@ -1,5 +1,4 @@
 import React from 'react';
-import './Registering.css';
 import logo from '../assets/Logo.svg';
 import dimond from '../assets/dimond.png';
 import box from '../assets/box.png';
@@ -8,10 +7,11 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
+import Card2 from './Card2';
 
 
-export default function Registering() {
+
+export default function Reg() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'!#' },
@@ -25,7 +25,7 @@ export default function Registering() {
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-                <Card/>
+              <Card2/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>

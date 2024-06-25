@@ -13,9 +13,11 @@
     text-decoration: none;
     color: #021D4B;
 }
+
 .username {
     text-align: right;
 }
+
 .btnIcon {
     background-color: #021D4B;
     border: none;
@@ -70,4 +72,15 @@
         height: 100%;
 
     }
+}
+
+.sadFace {
+    width: 232px;
+    height: 232px;
+    flex-shrink: 0;
+}
+.text{
+    font-family: dana;
+	font-style: normal;
+	font-weight: normal;
 }
