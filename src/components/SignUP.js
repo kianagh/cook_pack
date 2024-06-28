@@ -36,7 +36,9 @@ export default function SignUP() {
 
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                             </div>
-                            <button type="submit" class="btn " style={{ backgroundColor: '#ABD2FF', color: '#021D4B', fontWeight: 700 }}>ارسال کد</button>
+                            {/* <link to='/conforming'> */}
+                                <button type="submit" class="btn " style={{ backgroundColor: '#ABD2FF', color: '#021D4B', fontWeight: 700 }}>ارسال کد</button>
+                            {/* </link> */}
                             <div>
                                 <p>ثبت نام شما به منزله‌ی پذیرفتن شرایط کوک‌پک می‌باشد.</p>
                             </div>
