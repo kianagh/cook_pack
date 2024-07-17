@@ -21,7 +21,7 @@ import Footer from '../components/Footer';
 // import Row from 'react-bootstrap/esm/Row';
 
 export default function MainPage() {
-  
+
     return (
 
         <div className='homePage'>
@@ -51,10 +51,12 @@ export default function MainPage() {
                 </div>
                 <div className='col align-self container justify-content-start d-flex align-items-center h-50'>
                     <div className='text-right' >
-                        <h1 className='text-dark MainTop '>طعم غذا،<br/> به مواد تازشه...</h1>
+                        <h1 className='text-dark MainTop '>طعم غذا،<br /> به مواد تازشه...</h1>
                         <p className='text-white text-right mr-0 secondMainTop'>بیش از ۳۰۰ نوع وعده غذایی در ۸ دسته‌بندی متفاوت هفتگی</p>
                         <div className='col  container justify-content-start d-flex mt-2'>
-                            <button className=' btn-hero ml-auto'>مشاهده دسته بندی</button>
+                            <Link to='/foods'>
+                                <button className=' btn-hero ml-auto'>مشاهده دسته بندی</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -72,7 +74,7 @@ export default function MainPage() {
                 <div class="container p-5">
                     <div class="row">
                         <div class="col-md-4 mt-4">
-                            <Gifs gifUrls={[book]}  title="انتخاب غذای مورد نظر" info="انتخاب غذای مناسب در ۸ دسته بندی همراه با قابلیت شخصی‌سازی مواد اولیه!" />
+                            <Gifs gifUrls={[book]} title="انتخاب غذای مورد نظر" info="انتخاب غذای مناسب در ۸ دسته بندی همراه با قابلیت شخصی‌سازی مواد اولیه!" />
                         </div>
                         <div class="col-md-4 mt-4">
                             <Gifs gifUrls={[cooking]} title="تحویل پک سفارشی" info="ارسال مواد اولیه به همراه دستورالعمل ویژه کوک پک با بسته‌بندی سفارشی در زمان و محل مشخص شده" />
@@ -105,10 +107,10 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='idea'>
-                <Ideas/>
+                <Ideas />
             </div>
             <div className='FOOTER'>
-                <Footer/>
+                <Footer />
             </div>
 
         </div>

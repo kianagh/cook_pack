@@ -9,10 +9,10 @@
 
 .foodsItem {
     width: 660px;
-    height: 936px;
+    height: fit-content;
     flex-shrink: 0;
     border-radius: 50px;
-    background: var(--White, #FFF);
+    background: var(--White, #ffffff);
 }
 
 .pictureName {
@@ -23,3 +23,10 @@
     font-weight: 700;
     line-height: normal;
 } 
+.col-8{
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #021D4B;
+}

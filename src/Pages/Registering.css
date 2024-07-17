@@ -79,3 +79,42 @@
     height: 44px;
     flex-shrink: 0;
 }
+
+.inputOfTheCode {
+    border-radius: 16px;
+    border: none;
+    width: 300px;
+    height: 44px;
+}
+
+.btnComfirm {
+    width: 132px;
+    height: 56px;
+    flex-shrink: 0;
+    background-color: #ABD2FF;
+    color: #021D4B;
+    text-align: center;
+    font-family: Dana;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.4px;
+}
+
+.btn-transparent {
+    color: #FFF;
+    text-align: center;
+    font-family: Dana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+.signUpChange{
+    text-decoration: none;
+}
+.form-control::placeholder{
+color: rgb(134, 131, 131);
+}

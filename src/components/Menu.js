@@ -16,9 +16,11 @@ const vectors = [
     { vector: salad, id: 5, btnName: "گیاهی" },
     { vector: pasta, id: 6, btnName: "متفرقه" },
 ];
+const defaultVector = vectors.find(vector => vector.id === 1).vector;
+
 
 export default function Menu() {
-    const [clickedImage, setClickedImage] = useState(null);
+    const [clickedImage, setClickedImage] = useState(defaultVector);
 
     const handleClick = (vector) => {
         setClickedImage(vector);
@@ -32,7 +34,7 @@ export default function Menu() {
                         {clickedImage && <img src={clickedImage} alt="Clicked" className="clickedImage m-5" />}
                     </div>
                 </div>
-                <div className='row-8 d-flex flex-column justify-content-between'>
+                <div className='row-8 d-flex flex-column justify-content-between align-items-center'>
                     {vectors.map((data) => (
                         <div key={data.id} className='btnDiv d-flex justify-content-centre m-3 align-items-center'>
                             <button className="menuBtn row" onClick={() => handleClick(data.vector)}>

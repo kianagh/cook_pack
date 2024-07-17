@@ -4,7 +4,7 @@ import Menu from '../components/Menu'
 
 export default function Foods() {
   return (
-    <div className='row '>
+    <div className='row'>
       <div className='row d-flex justify-cotent-between'>
         <div className="col-4">
           <Menu />

@@ -6,7 +6,7 @@ import ghorme from '../assets/ghorme.jpg'
 import fesenjan from '../assets/fesemjoon.jpg'
 import ghaleie from '../assets/ghalie.jpg'
 import mahiche from '../assets/mahiche.jpg'
-import zareshkPl
+import zareshkPlo from '../assets/zereshkPolo.jpg'
 
 export default function FoodsItems() {
     return (

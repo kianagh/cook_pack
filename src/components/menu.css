@@ -4,8 +4,15 @@
     flex-shrink: 0;
     overflow-x: hidden;
 }
-.entireSide{
+
+.entireSide {
     overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 1024px;
+    align-items: center;
 }
 
 .logo {
@@ -26,5 +33,25 @@
     font-weight: 700;
     line-height: normal;
     outline: none;
+    background-color: white;
+    border: transparent;
+
+}
+
+.menuBtn:focus {
+    color: var(--Black, #000);
+    font-family: Dana;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    outline: none;
+    background-color: #ABD2FF;
+    width: 208px;
+    height: 65px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 54px;
 
 }
