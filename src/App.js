@@ -24,6 +24,8 @@ function App() {
         <Route path='/signup' element={<SignUP/>}/>
         <Route path='/conforming' element={<Confirming/>}/>
         <Route path='/login' element={<Login/>}/>   
+        {/* <Route path="/" element={<Menu />} />
+        <Route path="/foods/:category" element={<FoodsItems />} /> */}
       </Routes>
     </div>
   );

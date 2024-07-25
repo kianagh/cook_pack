@@ -12,7 +12,7 @@
     height: fit-content;
     flex-shrink: 0;
     border-radius: 50px;
-    background: var(--White, #ffffff);
+    background-color: var(--White, #ffffff);
 }
 
 .pictureName {
