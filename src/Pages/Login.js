@@ -16,12 +16,12 @@ export default function Login() {
                                 <form className='d-flex flex-column justify-content-center align-items-center'>
                                     <div class="form-group flex-column d-flex justify-content-center align-items-start m-2 ">
                                         <label for="exampleInputEmail1 " className='m-1'>نام کاربری: </label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="کیانا قرائیان" />
+                                        <input required type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="کیانا قرائیان" />
                                         <small id="emailHelp" className="form-text  text-secondary">لطفا نام کاربری را درست وارد کنید</small>
                                     </div>
                                     <div class="form-group flex-column d-flex justify-content-center align-items-start">
                                         <label for="exampleInputPassword1" className='m-1'>رمز عبور:</label>
-                                        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="********" />
+                                        <input required type="password" className="form-control" id="exampleInputPassword1" placeholder="********" />
                                         <small id="emailHelp" className="form-text  text-secondary"> رمز عبور 8 کاراکتر است</small>
 
                                     </div>

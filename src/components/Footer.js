@@ -51,7 +51,7 @@ export default function Footer() {
               <div className='emailForm'>
                 <InputGroup className='inputgroup'>
                   <Form.Control className='bg-white form' placeholder='برای اطلاع از آخرین اخبار وجشنواره‌های کوک‌پک ایمیل خود را وارد کنید' />
-                  <InputGroup.Text className='Useremail'>ایمیل</InputGroup.Text>
+                  <InputGroup.Text className='Useremail' >ایمیل</InputGroup.Text>
                 </InputGroup></div>
             </Row>
           </Col>

@@ -9,8 +9,8 @@ import RegComplete from './components/RegComplete';
 import SignUP from './components/SignUP';
 import Confirming from './components/Confirming';
 import Login from './Pages/Login';
-import Menu from './components/Menu';
-import FoodsItems from './components/FoodsItems';
+import Materials from './components/Materials';
+
 
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
         <Route path='/reg' element={<RegComplete/>}/>
         <Route path='/signup' element={<SignUP/>}/>
         <Route path='/conforming' element={<Confirming/>}/>
-        <Route path='/login' element={<Login/>}/>   
+        <Route path='/login' element={<Login/>}/>  
+        <Route path="/foods/:id" element={<Materials/>} />
         {/* <Route path="/" element={<Menu />} />
         <Route path="/foods/:category" element={<FoodsItems />} /> */}
       </Routes>

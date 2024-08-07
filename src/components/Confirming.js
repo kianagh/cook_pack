@@ -15,7 +15,7 @@ export default function Confirming() {
                             <p>کد به شماره ۰۹۱۲۳۴۵۶۷۸۹ ارسال شد.</p>
                             <p>لطفا کد ۵ رقمی خود را وارد کنید:</p>
                         </div>
-                        <input className='inputOfTheCode' />
+                        <input className='inputOfTheCode' required />
                     </div>
                     <div>
                         <div className='d-flex align-items-center justify-content-center m-4'>
