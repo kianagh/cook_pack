@@ -1,5 +1,4 @@
 import React from 'react';
-import './Registering.css';
 import logo from '../assets/Logo.svg';
 import dimond from '../assets/dimond.png';
 import box from '../assets/box.png';
@@ -8,24 +7,25 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
+import Card6 from './Card6';
 
 
-export default function Registering() {
+
+export default function RegComplete() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
-        { text: "آدرس ها", src: map,add:'/add' },
+        { text: "آدرس ها", src: map,add:'/map' },
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human ,add:'/signup'},
+        { text: "حساب ها", src: human,add:'/login' },
         { text: "خروج از حساب", src: out,add:'!#' },
     ];
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-                <Card/>
+              <Card6/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>

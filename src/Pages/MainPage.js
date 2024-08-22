@@ -38,7 +38,7 @@ export default function MainPage() {
                                 <Nav className="ml-auto  flex-grow-1 justify-content-center">
                                     <Link to='/aboutUs' className='nav-link'>درباره ما</Link>
                                     <Link to='/supporting' className='nav-link'>پشتیبانی</Link>
-                                    <Link to='/menue' className='nav-link'>منوی هفته</Link>
+                                    <Link to='./foodpage' className='nav-link'>منوی هفته</Link>
                                     <Link to='/plan' className='nav-link'>طرح ها</Link>
                                 </Nav>
                                 <Nav className='reg'>
@@ -54,7 +54,7 @@ export default function MainPage() {
                         <h1 className='text-dark MainTop '>طعم غذا،<br /> به مواد تازشه...</h1>
                         <p className='text-white text-right mr-0 secondMainTop'>بیش از ۳۰۰ نوع وعده غذایی در ۸ دسته‌بندی متفاوت هفتگی</p>
                         <div className='col  container justify-content-start d-flex mt-2'>
-                            <Link to='/foods'>
+                            <Link to='/foodpage'>
                                 <button className=' btn-hero ml-auto'>مشاهده دسته بندی</button>
                             </Link>
                         </div>

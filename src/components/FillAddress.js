@@ -1,5 +1,4 @@
 import React from 'react';
-import './Registering.css';
 import logo from '../assets/Logo.svg';
 import dimond from '../assets/dimond.png';
 import box from '../assets/box.png';
@@ -8,10 +7,11 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
+import Card5 from './Card5';
 
 
-export default function Registering() {
+
+export default function fillAddress() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
@@ -19,13 +19,13 @@ export default function Registering() {
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human ,add:'/signup'},
+        { text: "حساب ها", src: human,add:'/signup' },
         { text: "خروج از حساب", src: out,add:'!#' },
     ];
     return (
-        <div className='register'>
+        <div className='register '>
             <div className='col-10 LeftPartBack'>
-                <Card/>
+              <Card5/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>
@@ -37,7 +37,7 @@ export default function Registering() {
                             <div className='col pt-5'>
                                 <ul className='row'>
                                     {logos.map((item, index) => (
-                                        <li key={index} className='d-flex justify-content-right m-2'>
+                                        <li key={index} className='d-flex justify-content-right'>
                                             <img className="vec col-1 mt-1" src={item.src} alt="logo" />
                                             <Link to={item.add} className='col-11 p-1 text'>{item.text}</Link>
                                         </li>
@@ -49,8 +49,8 @@ export default function Registering() {
                     <div className='col pt-5 logoindown-section d-flex justify-content-center align-items-end'>
                         <ul className='row align-items-center d-flex'>
                             {logoindown.map((item, index) => (
-                                <li key={index} className='d-flex justify-content-right align-items-center m-2'>
-                                    <img className="vec col-1 mx-1" src={item.src} alt="logo" />
+                                <li key={index} className='d-flex justify-content-right align-items-center'>
+                                    <img className="vec col-1 mt-1" src={item.src} alt="logo" />
                                     <Link className='col-11 text' to={item.add}>{item.text}</Link>
                                 </li>
                             ))}

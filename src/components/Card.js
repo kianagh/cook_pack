@@ -19,7 +19,7 @@ export default function Card() {
               <h2>مهدی کشاورزی</h2>
               <div className="">
                 <img className="logoPen" src={pen} alt="logo" /> 
-                <Link className="linkStyle">ویرایش اطلاعات</Link>
+                <Link to='/signup' className="linkStyle">ویرایش اطلاعات</Link>
               </div>
             </div>
           </div>
@@ -36,9 +36,11 @@ export default function Card() {
                 alt="logo"
               />
             </div>
+            <Link to='/reg'>
             <button className="btn btn-primary btnOrder ">
-              <p>سفارش جدید</p>
+             سفارش جدید
             </button>
+            </Link>
           </div>
         </div>
         <div className="mt-5">

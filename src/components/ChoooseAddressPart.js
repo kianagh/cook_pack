@@ -1,5 +1,4 @@
 import React from 'react';
-import './Registering.css';
 import logo from '../assets/Logo.svg';
 import dimond from '../assets/dimond.png';
 import box from '../assets/box.png';
@@ -8,10 +7,11 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
+import Card4 from './Card4';
 
 
-export default function Registering() {
+
+export default function ChoooseAddressPart() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
@@ -19,13 +19,13 @@ export default function Registering() {
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human ,add:'/signup'},
+        { text: "حساب ها", src: human,add:'/signup' },
         { text: "خروج از حساب", src: out,add:'!#' },
     ];
     return (
-        <div className='register'>
+        <div className='register '>
             <div className='col-10 LeftPartBack'>
-                <Card/>
+              <Card4/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>

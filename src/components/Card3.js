@@ -20,7 +20,7 @@ export default function Card3() {
                             <h2>مهدی کشاورزی</h2>
                             <div className="">
                                 <img className="logoPen" src={pen} alt="logo" />
-                                <Link className="linkStyle">ویرایش اطلاعات</Link>
+                                <Link to='/signup' className="linkStyle">ویرایش اطلاعات</Link>
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,11 @@ export default function Card3() {
                                 alt="logo"
                             />
                         </div>
-                        <button className="btn btn-primary btnOrder ">
-                            <p>سفارش جدید</p>
+                       <Link to='/foodPage'>
+                       <button className="btn btn-primary btnOrder ">
+                           سفارش جدید
                         </button>
+                       </Link>
                     </div>
                 </div>
                 <div className="mt-5">
@@ -47,17 +49,17 @@ export default function Card3() {
                         <p> کوک پک پرو</p>
                         <div className="hr"></div>
                     </div>
-                    <div className="text-container mt-5">
+                    <div className="text-container mt-5 ">
                         <p>مهلت اشتراک شما:17 روز!</p>
-                        <div className="mt-5 d-flex col justify-content-between">
-                            <div className="d-flex flex-column">
+                        <div className=" d-flex col justify-content-between mt-4">
+                            <div className="d-flex flex-column m-3">
                                 <div className="d-flex align-items-start flex-column">
-                                    <h2 className="mb-3">اعتبار باقیمانده:</h2>
-                                    <p className="mt-1 mb-3">۷۶۵,۰۰۰ تومان</p>
+                                    <h2 className="my-2">اعتبار باقیمانده:</h2>
+                                    <p className="my-2 mb-4 text ">۷۶۵,۰۰۰ تومان</p>
                                 </div>
                                 <div className="d-flex flex-column align-items-start">
-                                    <h2 className="mb-3 ">وعده های رزور شده:</h2>
-                                    <p className="mt-1 ">۳ عدد</p>
+                                    <h2 className=" my-2">وعده های رزور شده:</h2>
+                                    <p className="my-2 text ">۳ عدد</p>
                                 </div>
                             </div>
 

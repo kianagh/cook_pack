@@ -13,21 +13,24 @@ export default function Login() {
                         <div className=''>
                             <h2 className='mb-3'>ورود</h2>
                             <div className=''>
-                                <form className='d-flex flex-column justify-content-center align-items-center'>
+                                <form className='d-flex flex-column justify-content-center align-items-center' required>
                                     <div class="form-group flex-column d-flex justify-content-center align-items-start m-2 ">
                                         <label for="exampleInputEmail1 " className='m-1'>نام کاربری: </label>
-                                        <input required type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="کیانا قرائیان" />
-                                        <small id="emailHelp" className="form-text  text-secondary">لطفا نام کاربری را درست وارد کنید</small>
+                                        <input  type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="کیانا قرائیان" required />
+                                        <small id="emailHelp" classNam
+                                        e="form-text  text-secondary">لطفا نام کاربری را درست وارد کنید</small>
                                     </div>
                                     <div class="form-group flex-column d-flex justify-content-center align-items-start">
                                         <label for="exampleInputPassword1" className='m-1'>رمز عبور:</label>
-                                        <input required type="password" className="form-control" id="exampleInputPassword1" placeholder="********" />
+                                        <input  type="password" className="form-control" id="exampleInputPassword1" placeholder="********"  required/>
                                         <small id="emailHelp" className="form-text  text-secondary"> رمز عبور 8 کاراکتر است</small>
 
                                     </div>
                                 </form>
                                 <div className='d-flex align-items-center justify-content-center m-4'>
-                                    <button className='btn btnComfirm d-flex justify-content-center align-items-center '>ورود</button>
+                                <Link to='/foodpage'>
+                                    <button className='btn btnComfirm d-flex justify-content-center align-items-center ' style={{backgroundColor:"#ABD2FF"}}>ورود</button>
+                                </Link>
                                 </div>
                             </div>
                         </div>

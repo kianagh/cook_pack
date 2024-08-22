@@ -1,6 +1,6 @@
 .card {
     width: 852px;
-    height: 80%;
+    height: max-content;
     background-color: #ABD2FF;
     padding: 36px;
     border-radius: 16px;
@@ -52,7 +52,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 0%;
-    
+
 }
 
 .hr {
@@ -77,8 +77,33 @@
     height: 232px;
     flex-shrink: 0;
 }
-.text{
+
+.text {
     font-family: dana;
-	font-style: normal;
-	font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.address {
+    font-weight: bold;
+}
+
+.add {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.lable {
+    font-weight: bold;
+}
+
+.scrollable-box {
+
+    height: 400px;
+    overflow-y: auto;
+    font-weight: bold;
+
+}
+.h3{
+    font-weight: bolder;
 }

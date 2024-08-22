@@ -7,7 +7,7 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card2 from './Card2';
+import Card3 from './Card3';
 
 
 
@@ -15,7 +15,7 @@ export default function Reg() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
-        { text: "آدرس ها", src: map,add:'!#' },
+        { text: "آدرس ها", src: map,add:'/add' },
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
@@ -25,7 +25,7 @@ export default function Reg() {
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-              <Card2/>
+              <Card3/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>
@@ -37,7 +37,7 @@ export default function Reg() {
                             <div className='col pt-5'>
                                 <ul className='row'>
                                     {logos.map((item, index) => (
-                                        <li key={index} className='d-flex justify-content-right'>
+                                        <li key={index} className='d-flex justify-content-right m-2'>
                                             <img className="vec col-1 mt-1" src={item.src} alt="logo" />
                                             <Link to={item.add} className='col-11 p-1 text'>{item.text}</Link>
                                         </li>
@@ -49,8 +49,8 @@ export default function Reg() {
                     <div className='col pt-5 logoindown-section d-flex justify-content-center align-items-end'>
                         <ul className='row align-items-center d-flex'>
                             {logoindown.map((item, index) => (
-                                <li key={index} className='d-flex justify-content-right align-items-center'>
-                                    <img className="vec col-1 mt-1" src={item.src} alt="logo" />
+                                <li key={index} className='d-flex justify-content-right align-items-center m-2'>
+                                    <img className="vec col-1 mx-1" src={item.src} alt="logo" />
                                     <Link className='col-11 text' to={item.add}>{item.text}</Link>
                                 </li>
                             ))}

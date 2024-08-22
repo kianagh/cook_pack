@@ -1,0 +1,239 @@
+.description {
+    text-align: right;
+}
+
+.innerTable {
+    width: 555px;
+    height: 350px;
+    border-radius: 50px;
+    border: 1px solid rgba(103, 103, 103, 0.50);
+}
+
+.borderOfTable {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.rightText {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.btn {
+    color: white;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--Primary, #021D4B);
+}
+
+
+.background {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #021D4B;
+}
+
+.bgCover {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personal {
+    border: 1px solid;
+    border-radius: 16px;
+    display: block;
+}
+
+.form-check {
+    text-align: right;
+}
+
+.comments {
+    text-align: right;
+    border-radius: 16px;
+    border: 1px solid var(--Black, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    text-align: right;
+}
+
+.leftText {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.image {
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.00) 100%);
+    background-image: linear-gradient();
+}
+
+.coverImage {
+    opacity: 0.8;
+}
+
+.idea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnsecond {
+    background-color: #657991;
+    border: none;
+    align-items: center;
+
+}
+
+.bag {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    background-color: rgba(2, 29, 75, 1);
+    border-radius: 50%;
+}
+
+.textarea {
+    border: none;
+}
+
+.ul {
+    text-align: right;
+}
+
+.ul h2 {
+    font-weight: bold;
+}
+
+.morghImage {
+    max-width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+}
+
+.morgh {
+    width: 274px;
+    height: 210px;
+}
+
+.material {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+    border: 1px solid #000 !important;
+    text-align: center;
+}
+
+.money {
+    font-weight: bold;
+}
+
+.Divhr {
+    width: 150%;
+    padding: 0px;
+    text-align: center;
+    margin-right: 20px;
+    height: 1px;
+}
+
+.discount {
+    width: 600px;
+}
+
+.textarea {
+    width: 400px;
+    border: 1px solid;
+}
+
+.middleBtn {
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+.middleBtn:hover {
+    border-radius: 0px;
+    border: 1px solid;
+
+}
+
+.buttonOne {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid;
+}
+
+.buttonLast {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid;
+}
+
+.btnBorder {
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.pardakhtBtn {
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Black, #000);
+    background: var(--Secondary, #ABD2FF);
+    
+}
+.btnBack{
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b7a;
+}
+.btnPay{
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b;
+
+}
+.chooseBtn:hover{
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}
+.chooseBtn{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.chooseBtn:active{
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+
+}
+.chooseBtn:focus{
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}

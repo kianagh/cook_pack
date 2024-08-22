@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import FoodsItems from '../components/FoodsItems'
 import Menu from '../components/Menu';
-
 export default function Foods() {
   const [visibleSection, setVisibleSection] = useState('rice');
 
@@ -10,8 +9,8 @@ export default function Foods() {
     setVisibleSection(section);
   };
   return (
-    <div className='row'>
-      <div className='row d-flex justify-cotent-between'>
+    <div className=' p-0 '>
+      <div className='row '>
         <div className="col-4">
           <Menu handleShowSection={handleShowSection} />
         </div>

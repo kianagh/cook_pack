@@ -15,11 +15,11 @@ export default function RegComplete() {
     const logos = [
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
-        { text: "آدرس ها", src: map,add:'!#' },
+        { text: "آدرس ها", src: map,add:'/map' },
         { text: "دیدگاه ها", src: comment,add:'!#' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human,add:'/signup' },
+        { text: "حساب ها", src: human,add:'/login' },
         { text: "خروج از حساب", src: out,add:'!#' },
     ];
     return (
@@ -37,7 +37,7 @@ export default function RegComplete() {
                             <div className='col pt-5'>
                                 <ul className='row'>
                                     {logos.map((item, index) => (
-                                        <li key={index} className='d-flex justify-content-right'>
+                                        <li key={index} className='d-flex justify-content-right m-2'>
                                             <img className="vec col-1 mt-1" src={item.src} alt="logo" />
                                             <Link to={item.add} className='col-11 p-1 text'>{item.text}</Link>
                                         </li>
@@ -49,8 +49,8 @@ export default function RegComplete() {
                     <div className='col pt-5 logoindown-section d-flex justify-content-center align-items-end'>
                         <ul className='row align-items-center d-flex'>
                             {logoindown.map((item, index) => (
-                                <li key={index} className='d-flex justify-content-right align-items-center'>
-                                    <img className="vec col-1 mt-1" src={item.src} alt="logo" />
+                                <li key={index} className='d-flex justify-content-right align-items-center m-2'>
+                                    <img className="vec col-1 mx-1" src={item.src} alt="logo" />
                                     <Link className='col-11 text' to={item.add}>{item.text}</Link>
                                 </li>
                             ))}
