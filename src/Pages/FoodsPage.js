@@ -14,7 +14,7 @@ export default function Foods() {
         <div className="col-4">
           <Menu handleShowSection={handleShowSection} />
         </div>
-        <div className="col-8">
+        <div className="col-8 visible pt-2">
           <FoodsItems visibleSection={visibleSection} />
         </div>
       </div>

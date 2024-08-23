@@ -23,10 +23,11 @@
     font-weight: 700;
     line-height: normal;
 } 
-.col-8{
+.visible{
     background-image: url('../assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #021D4B;
+    
 }

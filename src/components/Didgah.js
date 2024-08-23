@@ -7,7 +7,7 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card6 from './Card6';
+import Card8 from './Card8';
 
 
 
@@ -20,12 +20,12 @@ export default function RegComplete() {
     ];
     const logoindown = [
         { text: "حساب ها", src: human,add:'/login' },
-        { text: "خروج از حساب", src: out,add:'!#' },
+        { text: "خروج از حساب", src: out,add:'/order' },
     ];
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-              <Card6/>
+              <Card8/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>

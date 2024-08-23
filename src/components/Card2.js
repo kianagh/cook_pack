@@ -52,28 +52,27 @@ export default function Card2() {
                         <p> کوک پک پرو</p>
                         <div className="hr"></div>
                     </div>
-                    <div className="text-container mt-5">
+                    <div className="text-container mt-4">
                         <p>اشتراک فعال ندارید!</p>
                         <div className="mt-5 d-flex row align-items-center">
-                            <div className="col-7">
+                            <div className="col-8">
                                 <h1 className="d-flex">مزایا کوک‌پرو</h1>
                                 <div>
                                     <ul className="row d-flex">
                                         {profit.map((item, index) =>
-                                            <li key={index} className=" d-flex align-items-center">
+                                            <li key={index} className=" d-flex align-items-center text justify-content-right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0C12.6522 0 15.1957 1.05357 17.0711 2.92893C18.9464 4.8043 20 7.34784 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C7.34784 20 4.8043 18.9464 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10ZM9.42933 14.28L15.1867 7.08267L14.1467 6.25067L9.23733 12.3853L5.76 9.488L4.90667 10.512L9.42933 14.28Z" fill="#021D4B" />
                                                 </svg>
-                                                <p className="my-4 mx-1 text">{item.text}</p>
+                                                <p className="my-4 mx-1 text ">{item.text}</p>
                                             </li>
                                         )}
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-6 sadFace"><img src={sadFace} alt='logo' className="sadFace" /></div>
+                            <div className="col-4 sadFace"><img src={sadFace} alt='logo' className="sadFace" /></div>
                         </div>{" "}
                     </div>
-     
                     <Link to='/buyaccount'>
                         <button className="btn btn-lg">خرید اشتراک</button>
                     </Link>

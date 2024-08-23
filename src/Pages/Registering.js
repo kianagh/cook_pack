@@ -16,7 +16,7 @@ export default function Registering() {
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
         { text: "آدرس ها", src: map,add:'/add' },
-        { text: "دیدگاه ها", src: comment,add:'!#' },
+        { text: "دیدگاه ها", src: comment,add:'/didgah' },
     ];
     const logoindown = [
         { text: "حساب ها", src: human ,add:'/signup'},

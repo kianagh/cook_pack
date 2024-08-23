@@ -11,24 +11,22 @@ import tahchin from '../assets/tahchin.jpg';
 import reshte from '../assets/reshte.jpg';
 import albaloo from '../assets/albaloo.jpg';
 import kalam from '../assets/kalam.jpg';
-// import Address from "./Address"
 import "./Card.css";
-const Card4 = () => {
+const Card7 = () => {
 
     const items = [
-        { image: loobia, text1: ' لوبیا پلو', text2: 'بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان' },
-        { image: adas, text1: ' عدس پلو', text2: ' بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
-        { image: tahchin, text1: 'تهچین', text2: ' بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
-        { image: reshte, text1: ' رشته پلو', text2: ' بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
-        { image: albaloo, text1: 'آلبالو پلو', text2: ' بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
-        { image: kalam, text1: ' کلم پلو', text2: ' بسته ۱۰ نفره، یکشنبه ۱۲ آذر ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
-
+        { image: loobia, text1: ' لوبیا پلو', text2: 'مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید. ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان' },
+        { image: adas, text1: 'عدس پلو', text2: ' مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید. ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
+        { image: tahchin, text1: ' تهچین', text2: ' مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید.',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
+        { image: reshte, text1: ' رشته پلو', text2: ' مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید. ',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
+        { image: albaloo, text1: 'آلبالو پلو', text2: 'مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید.',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
+        { image: kalam, text1: 'کلم پلو', text2: 'مواد اولیه بسیار مرغوب و تازه بود. من گوشت هم سفارش دادم که اون هم خیلی تازه بود. حتما امتحان کنید.',text3:'مبلغ پرداختی: ۷۴۴,۰۰۰ تومان'  },
 
     ];
     return (
         <div>
             <div className='card p-3'>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between ">
                     <div className="d-flex">
                         <div>
                             <img src={avatar} alt="logo " />
@@ -61,7 +59,7 @@ const Card4 = () => {
                         </Link>
                     </div>
                 </div>
-                <h2 className='address'> سفارش ها</h2>
+                <h2 className='address'> دیدگاه ها</h2>
                 <hr />
                 <div className='row' >
                     <div className="scrollable">
@@ -70,8 +68,7 @@ const Card4 = () => {
                           <div className="d-flex mb-4 align-items-center justify-content-between" key={index}>
                                 <div className='d-flex flex-column align-items-start'>
                                     <h3 className="mb-1 h3">{item.text1}</h3>
-                                    <p className="mb-1">{item.text2}</p>
-                                    <p className='mb-1'>{item.text3}</p>
+                                    <p className="mb-1 text">{item.text2}</p>
                                 </div>
                                 <img src={item.image} alt={`Item ${index}`} className="me-3 rounded" style={{
                                     width: "170px",
@@ -89,4 +86,4 @@ const Card4 = () => {
     )
 }
 
-export default Card4
+export default Card7

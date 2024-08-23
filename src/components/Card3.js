@@ -11,7 +11,7 @@ export default function Card3() {
     return (
         <div className="">
             <div className="card">
-                <div className="d-flex justify-content-between mb-5">
+                <div className="d-flex justify-content-between">
                     <div className="d-flex">
                         <div>
                             <img src={avatar} alt="logo " />

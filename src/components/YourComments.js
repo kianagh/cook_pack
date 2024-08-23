@@ -7,7 +7,7 @@ import comment from '../assets/comments.png';
 import human from '../assets/human.png';
 import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
-import Card6 from './Card6';
+import Card7 from './Card7';
 
 
 
@@ -25,7 +25,7 @@ export default function RegComplete() {
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-              <Card6/>
+              <Card7/>
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>

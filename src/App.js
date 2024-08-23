@@ -17,6 +17,8 @@ import ChoooseAddressPart from './components/ChoooseAddressPart';
 import FillAddress from "./components/FillAddress"
 import Reg from "./components/Reg"
 import Order from "./components/Order.js"
+import YourComments from "./components/YourComments.js"
+import Didgah from './components/Didgah.js'
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path='/map' element={<FillAddress/>}/>
         <Route path ='/buyaccount' element={<Reg/>}/>
         <Route path='/order' element={<Order/>}/>
+        <Route path='/idea' element={<YourComments/>}/>
+        <Route path='/didgah' element={<Didgah/>}/>
       </Routes>
     </div>
   );

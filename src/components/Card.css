@@ -82,6 +82,7 @@
     font-family: dana;
     font-style: normal;
     font-weight: normal;
+    width: 100%;
 }
 
 .address {
@@ -97,13 +98,21 @@
     font-weight: bold;
 }
 
-.scrollable-box {
-
+.scrollable {
     height: 400px;
     overflow-y: auto;
     font-weight: bold;
-
 }
 .h3{
     font-weight: bolder;
 }
+.item{
+    width: 100%;
+}
+/* .scrollable::-webkit-scrollbar-thumb {
+    background:#021D4B; 
+    border-radius: 10px;
+  }
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background:#021d4b7e; 
+  } */

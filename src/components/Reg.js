@@ -16,7 +16,7 @@ export default function Reg() {
         { text: "اشتراک", src: dimond,add:'/reg' },
         { text: "سفارش ها", src: box,add:'/register' },
         { text: "آدرس ها", src: map,add:'/add' },
-        { text: "دیدگاه ها", src: comment,add:'!#' },
+        { text: "دیدگاه ها", src: comment,add:'/didgah' },
     ];
     const logoindown = [
         { text: "حساب ها", src: human,add:'/signup' },
@@ -25,7 +25,7 @@ export default function Reg() {
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-              <Card3/>
+              <Card3 />
             </div>
             <div className='col-2 rightPartOfBack'>
                 <div className='d-flex flex-column'>
