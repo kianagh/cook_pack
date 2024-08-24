@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import "./Materia.css"
-import morghsokhari from "../assets/morghSokhari.jpg"
+import loobia from "../assets/loobia.jpg"
 import logo from "../assets/Logo.svg"
 import PersianCalendar from './PersianCalendar';
 import pardakht from "../assets/pardakht.png"
@@ -73,38 +73,38 @@ const Pay = () => {
                     <hr className='p-0 m-2' style={{ height: "0.1px" }} />
                     <div className='row d-flex justify-content-between w-100'>
                         <div className='col ul'>
-                            <h2>مرغ سوخاری</h2>
+                            <h2> لوبیا پلو</h2>
                             <ul>
-                                <li >ران مرغ</li>
-                                <li>فیله مرغ</li>
-                                <li>آرد سفید</li>
-                                <li>آرد سوخاری</li>
+                                <li >برنج</li>
+                                <li>لوبیا سبز خرد شده</li>
+                                <li>گوشت چرخ‌کرده</li>
                                 <li>پیاز</li>
+                                <li>رب گوجه فرنگی</li>
                             </ul>
                         </div>
                         <div className='col morghImage'>
-                            <img src={morghsokhari} alt='morgh' className=' morgh rounded p-0' />
+                            <img src={loobia} alt='morgh' className=' morgh rounded p-0' />
                         </div>
                     </div>
                     <div className='material w-100 py-2  rounded d-flex flex-column align-items-center'>
                         <table className='innerTable '>
                             <tr>
-                                <td className='rightText'>ران مرغ (۴ عدد)</td>
+                                <td className='rightText'> برنج</td>
                                 <td className='leftText'>۱۲۰٬۰۰۰ تومان</td>
                             </tr>
                             <tr>
-                                <td className='rightText'>فیله مرغ (۴ عدد)</td>
+                                <td className='rightText'>لوبیا سبز خرد شده</td>
                                 <td className='leftText'>۱۴۰٬۰۰۰ تومان</td>
                             </tr>
                             <tr>
-                                <td className='rightText'>آرد سفید (۱۰۰ گرم)</td>
+                                <td className='rightText'> گوشت چرخ‌کرده</td>
                                 <td className='leftText'>۳۰٬۰۰۰ تومان</td>
                             </tr>  <tr>
-                                <td className='rightText'>آرد سوخاری (۱۰۰ گرم)</td>
+                                <td className='rightText'> رب گوجه فرنگی</td>
                                 <td className='leftText'> ۲۵٬۰۰۰ تومان</td>
                             </tr>
                             <tr>
-                                <td className='rightText'>پیاز (۳ عدد)</td>
+                                <td className='rightText'>پیاز </td>
                                 <td className='leftText'>۲۵٬۰۰۰ تومان</td>
                             </tr>
                             <tr>
