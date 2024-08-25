@@ -198,10 +198,10 @@
     }
 }
 
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for better layout on small screens */
-}
+/* } */
 
 /* Specific Adjustments for Landscape Tablet and Above */
 @media (min-width: 741px) and (max-width: 992px) {

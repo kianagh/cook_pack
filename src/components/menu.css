@@ -14,7 +14,7 @@
 }
 .rightSideMenu {
     width: 509px;
-    height: 1290px;
+    height: 1337px;
     flex-shrink: 0;
     overflow-x: hidden;
     background-color: white;
@@ -109,7 +109,6 @@
 
     .rightSideMenu {
         width: 100%;
-        height: 100vh; /* Full viewport height */
         position: fixed;
         top: 0;
         right: 0;
@@ -136,7 +135,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: #021D4B;
+            /* background-color: #021D4B; */
         }
         
     }

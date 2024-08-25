@@ -1,30 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import data from '../FOODcard.json'; // Adjust the path as necessary
-import "./Materia.css"
-// import Comments from './Comments';
-import Firstavatar from "../assets/avatar1.png"
-import secondavatar from "../assets/avatar2.png"
-import thirdavatar from "../assets/avatar3.png"
-import fourthavatar from "../assets/avatar4.png"
-import loobia from "../assets/loobia.jpg"
+import axios from 'axios';
+import "./Materia.css";
+import Firstavatar from "../assets/avatar1.png";
+import secondavatar from "../assets/avatar2.png";
+import thirdavatar from "../assets/avatar3.png";
+import fourthavatar from "../assets/avatar4.png";
+import loobia from "../assets/loobia.jpg";
 
 const Food = () => {
   const { id } = useParams(); // Get the ID from the URL
-  const foodId = parseInt(id, 10); // Convert ID to number
+  const [food, setFood] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchFood = async () => {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/api/foods/${id}/`);
+        setFood(response.data);
+      } catch (err) {
+        setError('Error fetching food data');
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  const food = data.foods.find((item) => item.id === foodId);
+    fetchFood();
+  }, [id]);
+
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
+  if (error) {
+    return <h2>{error}</h2>;
+  }
 
   if (!food) {
     return <h2>Food not found</h2>;
   }
-  console.log(id)
+
   return (
     <div className='row bgCover'>
       <div className='col-3 p-5'>
         <div>
           <p className=''>نیاز به شخصی‌سازی دارید؟</p>
+        
           <div className='personal p-2'>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  />
@@ -60,6 +82,7 @@ const Food = () => {
               </label>
             </div>
           </div>
+        
           <div className='py-2 comments px-2 my-3'>
             <p>دیدگاه‌ها:</p>
             <div>
@@ -76,13 +99,15 @@ const Food = () => {
                   <p className='my-1'>علیرضا شهسواری</p>
                 </div>
                 <p>من خیلی وقته از این سایت استفاده میکنم. هم از غذاهای کبابی گرفتم و هم فست‌فود اما دفعه اول بود که از قسمت پلویی یه بسته گرفتم. خیلی عالی بود مخصوصا برنجش که ایرانی بود.</p>
-              </div> <div>
+              </div>
+              <div>
                 <div className='d-flex w-100 align-items-start '>
                   <img src={thirdavatar} alt='avatar' />
                   <p className='my-1'>مهناز کریمی</p>
                 </div>
                 <p>خیلی عالی بود! حتما امتحانش کنید.</p>
-              </div> <div>
+              </div>
+              <div>
                 <div className='d-flex w-100 align-items-start '>
                   <img src={fourthavatar} alt='avatar' />
                   <p className='my-1'>کیانا قرائیان</p>
@@ -106,10 +131,12 @@ const Food = () => {
         <div className='container bg-white  rounded back' >
           <div className='d-flex flex-column ' >
             <div className='coverImage'>
-              <img className='image rounded p-2' src={loobia} alt='food'  />
+              <img className='image rounded p-2' src={food.src} alt='food'  />
             </div>
             <div className='d-flex w-100 justify-content-between align-items-center'>
+              {/* Display the food name */}
               <h1 className='foodname'>{food.name}</h1>
+              {/* Display the food preparation time */}
               <p className='m-t-1'>{food.time}</p>
             </div>
             <div className='text'>
@@ -119,31 +146,33 @@ const Food = () => {
               <table className='innerTable table rounded'>
                 <tr>
                   <td className='rightText'>برنج</td>
-                  <td className='leftText'>۴ پیمانه</td>
+                  <td className='leftText'></td>
                 </tr>
                 <tr>
                   <td className='rightText'>لوبیا سبز خورد شده</td>
-                  <td className='leftText'>۳ پیمانه</td>
+                  <td className='leftText'></td>
                 </tr>
                 <tr>
                   <td className='rightText'>گوشت چرخ‌کرده</td>
-                  <td className='leftText'>۴۰۰ گرم</td>
-                </tr>  <tr>
+                  <td className='leftText'></td>
+                </tr>  
+                <tr>
                   <td className='rightText'>پیاز</td>
-                  <td className='leftText'>۳ عدد متوسط</td>
+                  <td className='leftText'></td>
                 </tr>
                 <tr>
                   <td className='rightText'>رب گوجه فرنگی</td>
-                  <td className='leftText'>۵ قاشق غذاخوری</td>
+                  <td className='leftText'></td>
                 </tr>
                 <tr>
-                  <td className='rightText'>نمک، فلفل، زردچوبه، روغن  </td>
-                  <td className='leftText'>به مقدار لازم  </td>
+                  <td className='rightText'>نمک، فلفل، زردچوبه، روغن</td>
+                  <td className='leftText'></td>
                 </tr>
               </table>
             </div>
             <p>برای تعداد نفرات متفاوت، مقدار مواد به همان نسبت تغییر خواهد کرد.</p>
           </div>
+          {/* Display the food description */}
           <p className='description'>{food.description}</p>
           <div className='d-flex justify-content-between align-items-center py-3'>
             <p>جهت ثبت سفارش، ابتدا وارد حساب کاربری خود شوید.</p>
@@ -154,7 +183,6 @@ const Food = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
