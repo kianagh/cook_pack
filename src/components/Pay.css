@@ -1,0 +1,427 @@
+/* General Styles */
+.description {
+    text-align: right;
+}
+
+.innerTable {
+    width: 100%; /* Adjust width for better responsiveness */
+    max-width: 555px; /* Set a max-width for larger screens */
+    height: auto; /* Let the height adjust based on content */
+    border-radius: 50px;
+    border: 1px solid rgba(103, 103, 103, 0.50);
+}
+
+.borderOfTable {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Added margin for spacing */
+    overflow-x: auto; /* Allow horizontal scroll on small screens */
+}
+
+.rightText {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.btn {
+    color: white;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--Primary, #021D4B);
+    width: 100%; /* Adjust button width for better responsiveness */
+}
+
+.background {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #021D4B;
+}
+
+.bgCover {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personal {
+    border: 1px solid;
+    border-radius: 16px;
+    display: block;
+    padding: 15px; /* Added padding for spacing */
+    width: 100%;
+}
+
+.form-check {
+    text-align: right;
+}
+
+.comments {
+    text-align: right;
+    border-radius: 16px;
+    border: 1px solid var(--Black, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* Added padding for spacing */
+}
+
+.text {
+    text-align: right;
+}
+
+.leftText {
+    text-align: left;
+    padding-left: 5px;
+}
+.rowFood{
+    flex-direction:row-reverse;
+}
+
+/* Small Devices (Tablets and below) */
+@media (max-width: 740px) {
+    .image {
+        background-position: center;
+        width: 100%; /* Make image responsive */
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .innerTable {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .rowFood{
+        flex-direction: column-reverse;
+    }
+
+    .col-3,
+    .col-9 {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .morgh {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    
+
+    .discount {
+        width: 100%; /* Make discount section responsive */
+    }
+
+    .textarea {
+        width: 100%; /* Make text area responsive */
+    }
+
+    .material {
+        flex-direction: column; /* Stack items on small screens */
+        width: 100%;
+    }
+
+    .personal p,
+    .comments p {
+        font-size: 0.9rem;
+    }
+
+    .foodname {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    .innerTable {
+        font-size: 0.75rem; /* Adjust font size further for small screens */
+    }
+
+    .personal p,
+    .comments p {
+        font-size: 0.8rem;
+    }
+
+    .foodname {
+        font-size: 1.2rem;
+    }
+
+   
+}
+
+/* Medium to Large Devices (Tablets in landscape mode and above) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .foodname {
+        font-size: 1.8rem;
+    }
+
+    .coverImage img {
+        width: 90%;
+        height: auto;
+    }
+
+    .borderOfTable {
+        margin-top: 20px;
+    }
+
+    .innerTable {
+        width: 100%;
+    }
+
+    
+}
+
+/* Large Devices (Desktops and above) */
+@media (min-width: 992px) {
+    .image {
+        width: 588px;
+        height: 326px;
+    }
+
+    .morgh {
+        width: 274px;
+        height: 210px;
+    }
+
+    .discount {
+        width: 600px;
+    }
+
+    .textarea {
+        width: 400px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for better layout on small screens */
+}
+
+/* Specific Adjustments for Landscape Tablet and Above */
+@media (min-width: 741px) and (max-width: 992px) {
+    .back {
+        width: 618px;
+    }
+    .innerTable {
+        width: 555px;
+        height: 350px;
+        border-radius: 50px;
+        border: 1px solid rgba(103, 103, 103, 0.50);
+    }
+    
+    .borderOfTable {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .rightText {
+        text-align: right;
+    }
+    
+    
+
+    .innerTable {
+        width: 100%;
+    }
+}
+
+.chooseBtn:hover {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}
+
+.chooseBtn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.chooseBtn:active {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+
+}
+
+.chooseBtn:focus {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    color: white;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--Primary, #021D4B);
+   
+}
+.btnsecond {
+    background-color: #657991;
+    border: none;
+    align-items: center;
+
+}
+
+.middleBtn {
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+.middleBtn:hover {
+    border-radius: 0px;
+    border: 1px solid;
+
+}
+
+.buttonOne {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid;
+}
+
+.buttonLast {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid;
+}
+
+.btnBorder {
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.pardakhtBtn {
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Black, #000);
+    background: var(--Secondary, #ABD2FF);
+
+}
+
+.btnBack {
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b7a;
+}
+
+.btnPay {
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b;
+
+}
+.middleBtn {
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+.middleBtn:hover {
+    border-radius: 0px;
+    border: 1px solid;
+
+}
+
+.buttonOne {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid;
+}
+
+.buttonLast {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid;
+}
+
+.btnBorder {
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.pardakhtBtn {
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Black, #000);
+    background: var(--Secondary, #ABD2FF);
+
+}
+
+.btnBack {
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b7a;
+}
+
+.btnPay {
+    color: white;
+    width: 150px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #021d4b;
+
+}
+
+.chooseBtn:hover {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}
+
+.chooseBtn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.chooseBtn:active {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+
+}
+
+.chooseBtn:focus {
+    background-color: #abd2ff;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 740px) and (max-width: 992px) {
+    .col-3 {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    .chooseBtn{
+        width: 50%;
+    }
+}
+
+
+

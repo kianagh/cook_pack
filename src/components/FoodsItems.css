@@ -1,33 +1,83 @@
- .ghaza {
-    width: 267px;
-    height: 272px;
-    border-radius: 41px;
-    background-color: rgb(0, 0, 0, 0.85);
+/* General image styling */
+.ghaza {
+    width: 266px;
+    height: 343px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.53) 30%, rgba(128, 128, 128, 0.00) 100%);
+      border-radius: 41px;
+    background-color: rgba(0, 0, 0, 0.85);
     border: none;
-
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
+
+.ghaza:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* Container styling */
 .foodsItem {
-    width: 660px;
-    height: fit-content;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 660px;
+    /* Maximum width */
     border-radius: 50px;
     background-color: var(--White, #ffffff);
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the container */
 }
 
+/* Responsive text styling */
 .pictureName {
-    margin-top: -50px;
-    color: white;
-    font-size: 32px;
-    font-style: normal;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: normal;
-} 
-.visible{
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Background styling */
+.visible {
     background-image: url('../assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #021D4B;
-    
+    /* Add padding if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pictureName {
+        font-size: 1.2rem;
+        color: black;
+        /* Adjust font size for smaller screens */
+    }
+
+    .ghaza {
+        max-width: 400px;
+        /* Reduce size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .pictureName {
+        font-size: 1rem;
+        color: black;
+        /* Further reduce font size for very small screens */
+    }
+
+    .ghaza {
+        max-width: 400px;
+        /* Further reduce size */
+    }
+
+    .foodsItem {
+        padding: 10px;
+        /* Adjust padding */
+    }
 }

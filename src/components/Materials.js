@@ -27,7 +27,7 @@ const Food = () => {
           <p className=''>نیاز به شخصی‌سازی دارید؟</p>
           <div className='personal p-2'>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  />
               <label className="form-check-label" for="flexCheckDefault">
                 برنج
               </label>
@@ -103,10 +103,10 @@ const Food = () => {
         </div>
       </div>
       <div className='background col-9 p-5'>
-        <div className='container bg-white  rounded ' style={{ width: "618px" }}>
+        <div className='container bg-white  rounded back' >
           <div className='d-flex flex-column ' >
             <div className='coverImage'>
-              <img className='image rounded p-2' src={loobia} alt='food' style={{ height: "313px", width: "588px" }} />
+              <img className='image rounded p-2' src={loobia} alt='food'  />
             </div>
             <div className='d-flex w-100 justify-content-between align-items-center'>
               <h1 className='foodname'>{food.name}</h1>

@@ -54,7 +54,7 @@ export default function FoodsItems({ visibleSection }) {
         {visibleSection === 'rice' && (
             <div className='rice'>
                 <Row className="d-flex align-items-center justify-content-center">
-                    <Col md={6} className="d-flex align-items-center  pt-2">
+                    <Col md={6} className="d-flex align-items-center flex-column pt-3">
                         <div className="rectangleOfFoods">
                             <Link to='/foods/1'  style={{ textDecoration: "none" }} >
                                 <img src={loobia} alt="ghaza" className="ghaza" />
@@ -63,7 +63,7 @@ export default function FoodsItems({ visibleSection }) {
                         </div>
                     </Col>
 
-                    <Col md={6} className="d-flex align-items-center flex-column pt-2 ">
+                    <Col md={6} className="d-flex align-items-center flex-column pt-3 ">
                         <div className="rectangleOfFoods">
                             <Link to='/foods/2' style={{ textDecoration: "none" }}>
                                 <img src={adas} alt="ghaza" className="ghaza" />

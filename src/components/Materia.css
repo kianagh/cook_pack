@@ -71,12 +71,27 @@
     padding-left: 5px;
 }
 
+@media (max-width:740px) {
+    .image {
+        background-position: center;
+        width: 516px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.00) 100%);
+        background-image: linear-gradient();
+    }
+
+}
+
 .image {
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.00) 100%);
     background-image: linear-gradient();
+    width: 588px;
+     height: 326px;
+    ;
 }
 
 .coverImage {
@@ -197,9 +212,10 @@
     border-radius: 16px;
     border: 1px solid var(--Black, #000);
     background: var(--Secondary, #ABD2FF);
-    
+
 }
-.btnBack{
+
+.btnBack {
     color: white;
     width: 150px;
     height: 54px;
@@ -207,7 +223,8 @@
     border-radius: 16px;
     background-color: #021d4b7a;
 }
-.btnPay{
+
+.btnPay {
     color: white;
     width: 150px;
     height: 54px;
@@ -216,24 +233,220 @@
     background-color: #021d4b;
 
 }
-.chooseBtn:hover{
+
+.chooseBtn:hover {
     background-color: #abd2ff;
     color: white;
     font-weight: bold;
 }
-.chooseBtn{
+
+.chooseBtn {
     background-color: white;
     color: black;
     font-weight: bold;
 }
-.chooseBtn:active{
+
+.chooseBtn:active {
     background-color: #abd2ff;
     color: white;
     font-weight: bold;
 
 }
-.chooseBtn:focus{
+
+.chooseBtn:focus {
     background-color: #abd2ff;
     color: white;
     font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-3,
+    .col-9 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .personal,
+    .comments {
+        padding: 10px;
+    }
+
+    .personal p,
+    .comments p {
+        font-size: 0.9rem;
+    }
+
+    .coverImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .foodname {
+        font-size: 1.5rem;
+    }
+
+    .borderOfTable {
+        overflow-x: auto;
+        margin-top: 10px;
+    }
+
+    .innerTable {
+        width: 100%;
+    }
+
+    .btn,
+    .btnsecond {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-3,
+    .col-9 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .foodname {
+        font-size: 1.2rem;
+    }
+
+    .personal p,
+    .comments p {
+        font-size: 0.8rem;
+    }
+
+    .coverImage img {
+        height: auto;
+    }
+
+    .borderOfTable {
+        margin-top: 5px;
+    }
+
+    .innerTable {
+        font-size: 0.75rem;
+    }
+
+    .btn,
+    .btnsecond {
+        padding: 8px;
+    }
+}
+
+/* Landscape Tablet and Above */
+@media (min-width: 769px) and (max-width: 992px) {
+    .foodname {
+        font-size: 1.8rem;
+    }
+
+    .coverImage img {
+        width: 90%;
+        height: auto;
+    }
+
+    .borderOfTable {
+        margin-top: 20px;
+    }
+
+    .innerTable {
+        width: 100%;
+    }
+
+    .btn,
+    .btnsecond {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-3,
+    .col-9 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .personal,
+    .comments {
+        padding: 10px;
+    }
+
+    .personal p,
+    .comments p {
+        font-size: 0.9rem;
+    }
+
+    .coverImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .foodname {
+        font-size: 1.5rem;
+    }
+
+    .borderOfTable {
+        overflow-x: auto;
+        margin-top: 10px;
+    }
+
+    .innerTable {
+        width: 100%;
+    }
+
+    .btn,
+    .btnsecond {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+@media (max-width: 740px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-3 {
+        order: 2;
+    }
+
+    .col-9 {
+        order: 1;
+    }
+}
+
+@media (max-width: 740px) {
+
+    .col-3,
+    .col-9 {
+        padding: 10px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width:741px) {
+    .back {
+        width: 618px;
+    }
+
 }

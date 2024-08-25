@@ -29,7 +29,7 @@ export default function Login() {
                                 </form>
                                 <div className='d-flex align-items-center justify-content-center m-4'>
                                 <Link to='/foodpage'>
-                                    <button className='btn btnComfirm d-flex justify-content-center align-items-center ' style={{backgroundColor:"#ABD2FF"}}>ورود</button>
+                                    <button className='btn btnComfirm d-flex pardakhtBtn justify-content-center align-items-center ' style={{backgroundColor:"#ABD2FF"}}>ورود</button>
                                 </Link>
                                 </div>
                             </div>

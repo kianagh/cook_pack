@@ -20,12 +20,12 @@ export default function Confirming() {
                     <div>
                         <div className='d-flex align-items-center justify-content-center m-4'>
                             <Link to='/login'>
-                                <button className='btn btnComfirm d-flex justify-content-center align-items-center '>تایید</button>
+                                <button className='btn pardakhtBtn btnComfirm d-flex justify-content-center align-items-center '>تایید</button>
                             </Link>
                         </div>
                         <p>کدی دریافت نکردید؟</p>
                         <Link to='/signUp'>
-                            <button className='btn btn-transparent  ' to='/signUp'>دریافت مجدد</button>
+                            <button className='btn btn-transparent   ' to='/signUp'>دریافت مجدد</button>
 
                         </Link>
                         <div className='d-flex justify-content-center '>
