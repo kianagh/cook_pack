@@ -1,0 +1,12 @@
+.logout {
+    background-color: var(--Primary, #021D4B);
+    height: 100vh;
+}
+
+.logOut {
+    
+    background-color: white;
+    width: 571px;
+    height: 296px;
+    flex-shrink: 0;
+}

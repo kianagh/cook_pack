@@ -19,6 +19,7 @@ import Reg from "./components/Reg"
 import Order from "./components/Order.js"
 import YourComments from "./components/YourComments.js"
 import Didgah from './components/Didgah.js'
+import Logout from './Pages/Logout.js';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path='/order' element={<Order/>}/>
         <Route path='/idea' element={<YourComments/>}/>
         <Route path='/didgah' element={<Didgah/>}/>
+        <Route path ='/logout' element={<Logout/>}/>
       </Routes>
     </div>
   );

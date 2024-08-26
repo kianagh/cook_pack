@@ -29,7 +29,6 @@
     flex-shrink: 0;
     border-radius: 16px;
     background-color: var(--Primary, #021D4B);
-    width: 100%; /* Adjust button width for better responsiveness */
 }
 
 .background {
@@ -123,7 +122,7 @@
     }
 
     .material {
-        flex-direction: column; /* Stack items on small screens */
+    
         width: 100%;
     }
 
@@ -242,6 +241,7 @@
     background-color: white;
     color: black;
     font-weight: bold;
+    width: 25%;
 }
 
 .chooseBtn:active {

@@ -30,7 +30,7 @@ const Pay = () => {
                     <p className='p-0'>تاریخ ارسال:</p>
                     <PersianCalendar />
                 </div>
-                <div className='p-2'>
+                <div className='py-2'>
                     <button type="button" class="btn buttonOne  chooseBtn w-25 ">۲ ظهر</button>
                     <button type="button" class="btn buttonLast chooseBtn w-25">۹ صبح</button>
                 </div>

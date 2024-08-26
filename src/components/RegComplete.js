@@ -20,7 +20,7 @@ export default function RegComplete() {
     ];
     const logoindown = [
         { text: "حساب ها", src: human,add:'/login' },
-        { text: "خروج از حساب", src: out,add:'/order' },
+        { text: "خروج از حساب", src: out,add:'/logout' },
     ];
     return (
         <div className='register'>

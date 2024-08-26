@@ -20,7 +20,7 @@ export default function ChoooseAddressPart() {
     ];
     const logoindown = [
         { text: "حساب ها", src: human,add:'/signup' },
-        { text: "خروج از حساب", src: out,add:'!#' },
+        { text: "خروج از حساب", src: out,add:'/logout' },
     ];
     return (
         <div className='register '>
