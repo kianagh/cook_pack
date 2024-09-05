@@ -16,7 +16,7 @@ import phone from '../assets/phonee.svg'
 export default function Footer() {
   return (
     <div>
-      <div className='  container'>
+      <div className=' container' id='footer'>
         <Row className='d-flex align-items-center justfy-content-around '>
           <Col className='col-md-6'>
             <div className='d-flex '>

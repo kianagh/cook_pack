@@ -1,0 +1,17 @@
+/* CalendarStyles.css */
+
+/* Override the primary color to apply the custom color for the selected day */
+.my-custom-calendar .Calendar__day.-selected {
+    background-color: #b1d3ff !important;
+    color: #fff;
+  }
+  
+  .my-custom-calendar .Calendar__day.-selected:hover {
+    background-color: #a1c3ef !important; /* Slightly darker on hover */
+    color: #fff;
+  }
+  .data{
+    background-color: #a1c3ef !important; /* Slightly darker on hover */
+
+  }
+  

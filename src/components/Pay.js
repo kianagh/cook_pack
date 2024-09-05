@@ -61,8 +61,8 @@ const Pay = () => {
                 </div>
 
             </div>
-            <div className='background p-5 col-9 d-felx flex-column align-items-center ' >
-                <div className='container bg-white  rounded discount   '>
+            <div className='background p-5  col-9 d-flex flex-column align-items-center ' >
+                <div className='container bg-white  rounded discount p-4   '>
                     <div className='d-flex justify-content-between align-items-center p-3 '>
                         <img src={logo} alt='logo' className='logo' />
                         <h2>سبد خرید</h2>

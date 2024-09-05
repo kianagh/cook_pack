@@ -20,6 +20,7 @@ import Order from "./components/Order.js"
 import YourComments from "./components/YourComments.js"
 import Didgah from './components/Didgah.js'
 import Logout from './Pages/Logout.js';
+import Footer from './components/Footer.js';
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
         <Route path='/foods/:id'  element={<Materials/>} />
         <Route path='/calendar' element={<PersianCalendar/>}/>
         <Route path='/comments' element={<Comments/>}/>
-        <Route path='/pay' element={<Pay/>}/>
+        <Route path='/pay/:id' element={<Pay/>}/>
         <Route path='/add' element={<ChoooseAddressPart/>}/>
         <Route path='/map' element={<FillAddress/>}/>
         <Route path ='/buyaccount' element={<Reg/>}/>
@@ -44,6 +45,7 @@ function App() {
         <Route path='/idea' element={<YourComments/>}/>
         <Route path='/didgah' element={<Didgah/>}/>
         <Route path ='/logout' element={<Logout/>}/>
+        <Route path='/#footer' element={<Footer/>}/>
       </Routes>
     </div>
   );

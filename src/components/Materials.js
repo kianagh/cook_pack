@@ -46,10 +46,10 @@ const Food = () => {
       <div className='col-3 p-5'>
         <div>
           <p className=''>نیاز به شخصی‌سازی دارید؟</p>
-        
+
           <div className='personal p-2'>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  />
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
               <label className="form-check-label" for="flexCheckDefault">
                 برنج
               </label>
@@ -82,7 +82,7 @@ const Food = () => {
               </label>
             </div>
           </div>
-        
+
           <div className='py-2 comments px-2 my-3'>
             <p>دیدگاه‌ها:</p>
             <div>
@@ -131,7 +131,7 @@ const Food = () => {
         <div className='container bg-white  rounded back' >
           <div className='d-flex flex-column ' >
             <div className='coverImage'>
-              <img className='image rounded p-2' src={food.src} alt='food'  />
+              <img className='image rounded p-2' src={food.src} alt='food' />
             </div>
             <div className='d-flex w-100 justify-content-between align-items-center'>
               {/* Display the food name */}
@@ -146,28 +146,31 @@ const Food = () => {
               <table className='innerTable table rounded'>
                 <tr>
                   <td className='rightText'>برنج</td>
-                  <td className='leftText'></td>
+                  <td className='leftText'>۴ پیمانه</td>
                 </tr>
                 <tr>
                   <td className='rightText'>لوبیا سبز خورد شده</td>
-                  <td className='leftText'></td>
+                  <td className='leftText'>۳ پیمانه</td>
                 </tr>
                 <tr>
                   <td className='rightText'>گوشت چرخ‌کرده</td>
-                  <td className='leftText'></td>
-                </tr>  
+                  <td className='leftText'>۴۰۰ گرم</td>
+                </tr>
                 <tr>
                   <td className='rightText'>پیاز</td>
-                  <td className='leftText'></td>
+                  <td className='leftText'>۳ عدد متوسط</td>
                 </tr>
                 <tr>
                   <td className='rightText'>رب گوجه فرنگی</td>
-                  <td className='leftText'></td>
+                  <td className='leftText'>۵ قاشق غذاخوری</td>
                 </tr>
                 <tr>
                   <td className='rightText'>نمک، فلفل، زردچوبه، روغن</td>
-                  <td className='leftText'></td>
+                  <td className='leftText'>به مقدار لازم</td>
                 </tr>
+                <div className='pOfprof mt-3 mx-2' style={{width:"270px"}}>
+                  <p className='' style={{width:"500px"}}>به همراه ادویه مخصوص کوک‌پک و دستور پخت ویژه‌ی کوک‌پک</p>
+                </div>
               </table>
             </div>
             <p>برای تعداد نفرات متفاوت، مقدار مواد به همان نسبت تغییر خواهد کرد.</p>
@@ -176,7 +179,7 @@ const Food = () => {
           <p className='description'>{food.description}</p>
           <div className='d-flex justify-content-between align-items-center py-3'>
             <p>جهت ثبت سفارش، ابتدا وارد حساب کاربری خود شوید.</p>
-            <Link to="/pay">
+            <Link to={`/pay/${id}`}>
               <button className='btn'>ورود به حساب</button>
             </Link>
           </div>

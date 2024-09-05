@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef } from 'react';
 import './MainPage.css';
 import { Link } from "react-router-dom";
 // import Button from 'react-bootstrap/Button';
@@ -21,6 +22,7 @@ import Footer from '../components/Footer';
 // import Row from 'react-bootstrap/esm/Row';
 
 export default function MainPage() {
+    
 
     return (
 
@@ -36,14 +38,16 @@ export default function MainPage() {
                             <Navbar.Toggle aria-controls="basic-navbar-nav " />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto  flex-grow-1 justify-content-center">
-                                    <Link to='/aboutUs' className='nav-link'>درباره ما</Link>
+                                <Link to="/#footer" className="nav-link">درباره ما</Link>
+
                                     <Link to='/supporting' className='nav-link'>پشتیبانی</Link>
                                     <Link to='./foodpage' className='nav-link'>منوی هفته</Link>
-                                    <Link to='/plan' className='nav-link'>طرح ها</Link>
+                                    <Link to='/reg' className='nav-link'> اشتراک</Link>
                                 </Nav>
                                 <Nav className='reg'>
+                                <Link to='/login' className='nav-link'>ورود</Link>
+
                                     <Link to='/signup' className='nav-link'>ثبت نام</Link>
-                                    <Link to='/login' className='nav-link'>ورود</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </div>
@@ -110,7 +114,9 @@ export default function MainPage() {
                 <Ideas />
             </div>
             <div className='FOOTER'>
-                <Footer />
+                <div id="footer">
+                    <Footer />
+                </div>
             </div>
 
         </div>

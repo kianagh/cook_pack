@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Registering.css';
 import logo from '../assets/Logo.svg';
 import dimond from '../assets/dimond.png';
@@ -10,24 +10,30 @@ import out from '../assets/out.png';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 
-
 export default function Registering() {
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
+
     const logos = [
-        { text: "اشتراک", src: dimond,add:'/reg' },
-        { text: "سفارش ها", src: box,add:'/register' },
-        { text: "آدرس ها", src: map,add:'/add' },
-        { text: "دیدگاه ها", src: comment,add:'/didgah' },
+        { text: "اشتراک", src: dimond, add: '/reg' },
+        { text: "سفارش ها", src: box, add: '/register' },
+        { text: "آدرس ها", src: map, add: '/add' },
+        { text: "دیدگاه ها", src: comment, add: '/didgah' },
     ];
     const logoindown = [
-        { text: "حساب ها", src: human ,add:'/signup'},
-        { text: "خروج از حساب", src: out,add:'/logout' },
+        { text: "حساب ها", src: human, add: '/signup' },
+        { text: "خروج از حساب", src: out, add: '/logout' },
     ];
+
     return (
         <div className='register'>
             <div className='col-10 LeftPartBack'>
-                <Card/>
+                <Card />
             </div>
-            <div className='col-2 rightPartOfBack'>
+            <div className={`col-2 rightPartOfBack ${isSidebarOpen ? 'open' : ''}`}>
                 <div className='d-flex flex-column'>
                     <div className='d-flex align-items-center justify-content-center logos-section'>
                         <div className='d-flex flex-column justify-content-center'>
